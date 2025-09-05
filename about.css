@@ -1,0 +1,51 @@
+body {
+      margin: 0;
+      font-family: Merriweather Sans, regular;
+      background-color: #DBC2A6;
+    }
+
+    /* Navbar */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #414A37;
+      color: #DBC2A6;
+      padding: 15px 30px;
+    }
+
+    nav a {
+      color: #DBC2A6;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    .hero {
+      background: url('bg.jpg') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #414A37;
+      font-size: 2rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #DBC2A6;
+      text-align: center;
+      padding: 8px;
+    }
+
+    .hero {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #DBC2A6 ;
+  font-size: 2rem;
+  background-size: cover;
+  background-position: center;
+  animation: slide 10s infinite;
+}
