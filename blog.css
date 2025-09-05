@@ -1,0 +1,120 @@
+body {
+      margin: 0;
+      font-family: Merriweather Sans, regular;
+      background-color: #DBC2A6;
+      color: #414A37;
+    }
+    
+header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #414A37;
+      color: #DBC2A6;
+      padding: 15px 30px;
+    }
+
+    nav a {
+      color: #DBC2A6;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    .hero {
+      background: url('bg.jpg') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #414A37;
+      font-size: 2rem;
+    }
+    
+    /* Blog Section */
+.blog-section {
+  width: 85%;
+  margin: 40px auto;
+  text-align: center;
+  color: #fff;
+}
+
+.blog-section h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #414A37;
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.blog-card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.blog-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.blog-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.blog-card .read-more {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #414A37;
+  color: #DBC2A6;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.blog-card .read-more:hover {
+  background: #ffaa00;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+}
+
+
+
+footer {
+      background: #222;
+      color: #DBC2A6;
+      text-align: center;
+      padding: 8px;
+    }
+
+    .hero {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #DBC2A6 ;
+  font-size: 2rem;
+  background-size: cover;
+  background-position: center;
+  animation: slide 10s infinite;
+}

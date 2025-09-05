@@ -1,0 +1,111 @@
+body {
+      margin: 0;
+      font-family: Merriweather Sans, regular;
+    }
+
+    /* Navbar */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #414A37;
+      color: #DBC2A6;
+      padding: 15px 30px;
+    }
+
+    nav a {
+      color: #DBC2A6;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    .hero {
+      background: url('bg.jpg') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #414A37;
+      font-size: 2rem;
+    }
+
+    /* Scroll Updates */
+    .updates {
+      padding: 20px;
+      background: #DBC2A6;
+    }
+
+    .scroll-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      max-height: 250px;
+      overflow-y: scroll;
+    }
+
+    .update {
+      display: flex;
+      background: #414A37;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .update img {
+      width: 100px;
+      height: 80px;
+      margin-right: 10px;
+      object-fit: cover;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #DBC2A6;
+      text-align: center;
+      padding: 8px;
+    }
+
+    .hero {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #DBC2A6 ;
+  font-size: 2rem;
+  background-size: cover;
+  background-position: center;
+  animation: slide 10s infinite;
+}
+
+/* Keyframes for sliding images */
+@keyframes slide {
+  0% { background-image: url('img1.jpg'); }
+  33% { background-image: url('img2.jpg'); }
+  66% { background-image: url('img3.jpg'); }
+  100% { background-image: url('img1.jpg'); }
+}
+
+.purpose {
+  background: #414A37;
+  color: #DBC2A6;
+  margin: 0px;
+  padding: 20px;
+  border-radius: 0px;
+}
+
+.books {
+  background: #414A37;
+  color: #DBC2A6;
+  margin: 0px;
+  padding: 20px;
+  border-radius: 0px;
+}
+
+.space {
+  background: #DBC2A6;
+  
+  margin: 0px;
+  padding: 5px;
+  border-radius: 0px;
+}
