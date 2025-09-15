@@ -27,28 +27,314 @@
 </section>
 
 
-  <!-- Updates -->
-  <section class="updates">
-    <h2>Recent Updates</h2>
-    <div class="scroll-box">
-      <div class="update">
-        <img src="img4.jpg" alt="Update">
-        <p>Description of update 1...</p>
+  <!-- Subject Cards -->
+  <section class="subjects">
+    <h2>Explore Our Subjects</h2>
+    <div class="subjects-grid">
+      <div class="subject-card" onclick="openSubjectDetails('computer-science')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=100&h=100&fit=crop&crop=center" alt="Computer Science">
+            </div>
+            <h3>Computer Science</h3>
+            <p>Core programming and computational thinking</p>
+          </div>
+          <div class="card-back">
+            <div class="read-more-icon">📖</div>
+            <h3>Read More</h3>
+            <p>Explore Computer Science</p>
+          </div>
+        </div>
       </div>
-      <div class="update">
-        <img src="img4.jpg" alt="Update">
-        <p>Description of update 2...</p>
+      <div class="subject-card" onclick="openSubjectDetails('data-science')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=100&h=100&fit=crop&crop=center" alt="Data Science">
+            </div>
+            <h3>Data Science</h3>
+            <p>Extract insights from complex data</p>
+          </div>
+          <div class="card-back">
+            <div class="read-more-icon">📖</div>
+            <h3>Read More</h3>
+            <p>Explore Data Science</p>
+          </div>
+        </div>
       </div>
-      <div class="update">
-        <img src="img4.jpg" alt="Update">
-        <p>Description of update 3...</p>
+      
+      <div class="subject-card" onclick="openSubjectDetails('ai-ml')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon">
+              <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=100&h=100&fit=crop&crop=center" alt="AI ML">
+            </div>
+            <h3>AI ML</h3>
+            <p>Artificial Intelligence and Machine Learning</p>
+          </div>
+          <div class="card-back">
+            <div class="read-more-icon">📖</div>
+            <h3>Read More</h3>
+            <p>Explore AI ML</p>
+          </div>
+        </div>
       </div>
-      <div class="update">
-        <img src="img4.jpg" alt="Update">
-        <p>Description of update 4...</p>
+      <div class="subject-card" onclick="openSubjectDetails('statistics')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon">
+              <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=100&h=100&fit=crop&crop=center" alt="Statistics">
+            </div>
+            <h3>Statistics</h3>
+            <p>Mathematical foundations of data analysis</p>
+          </div>
+          <div class="card-back">
+            <div class="read-more-icon">📖</div>
+            <h3>Read More</h3>
+            <p>Explore Statistics</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="subject-card" onclick="openSubjectDetails('multimedia')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon">
+              <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=100&h=100&fit=crop&crop=center" alt="Multimedia">
+            </div>
+            <h3>Multimedia</h3>
+            <p>Digital content creation and design</p>
+          </div>
+          <div class="card-back">
+            <div class="read-more-icon">📖</div>
+            <h3>Read More</h3>
+            <p>Explore Multimedia</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="subject-card" onclick="openSubjectDetails('evs')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon">
+              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=100&h=100&fit=crop&crop=center" alt="EVS">
+            </div>
+            <h3>EVS</h3>
+            <p>Environmental Science and Sustainability</p>
+          </div>
+          <div class="card-back">
+            <div class="read-more-icon">📖</div>
+            <h3>Read More</h3>
+            <p>Explore EVS</p>
+          </div>
+        </div>
+      </div>
+      <div class="subject-card" onclick="openSubjectDetails('iot')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=100&h=100&fit=crop&crop=center" alt="IOT">
+            </div>
+            <h3>IOT</h3>
+            <p>Internet of Things and connected devices</p>
+          </div>
+          <div class="card-back">
+            <div class="read-more-icon">📖</div>
+            <h3>Read More</h3>
+            <p>Explore IOT</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="subject-card" onclick="openSubjectDetails('image-recognition')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon">
+              <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=100&h=100&fit=crop&crop=center" alt="Image Recognition">
+            </div>
+            <h3>Image Recognition</h3>
+            <p>Computer vision and pattern recognition</p>
+          </div>
+          <div class="card-back">
+            <div class="read-more-icon">📖</div>
+            <h3>Read More</h3>
+            <p>Explore Image Recognition</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="subject-card" onclick="openSubjectDetails('data-security')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon">
+              <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=100&h=100&fit=crop&crop=center" alt="Data Security">
+            </div>
+            <h3>Data Security</h3>
+            <p>Protecting information and systems</p>
+          </div>
+          <div class="card-back">
+            <div class="read-more-icon">📖</div>
+            <h3>Read More</h3>
+            <p>Explore Data Security</p>
+          </div>
+        </div>
+      </div>
+      <div class="subject-card" onclick="openSubjectDetails('oceanography')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon">
+              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=100&h=100&fit=crop&crop=center" alt="Oceanography">
+            </div>
+            <h3>Oceanography</h3>
+            <p>Study of marine environments</p>
+          </div>
+          <div class="card-back">
+            <div class="read-more-icon">📖</div>
+            <h3>Read More</h3>
+            <p>Explore Oceanography</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="subject-card" onclick="openSubjectDetails('cyber-security')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon">
+              <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=100&h=100&fit=crop&crop=center" alt="Cyber Security">
+            </div>
+            <h3>Cyber Security</h3>
+            <p>Defending against digital threats</p>
+          </div>
+          <div class="card-back">
+            <div class="read-more-icon">📖</div>
+            <h3>Read More</h3>
+            <p>Explore Cyber Security</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subject-card" onclick="openSubjectDetails('ethical-hacking')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon">
+              <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=100&h=100&fit=crop&crop=center" alt="Ethical Hacking">
+            </div>
+            <h3>Ethical Hacking</h3>
+            <p>Security testing and vulnerability assessment</p>
+          </div>
+          <div class="card-back">
+            <div class="read-more-icon">📖</div>
+            <h3>Read More</h3>
+            <p>Explore Ethical Hacking</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="subject-card" onclick="openSubjectDetails('sql')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon">
+              <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=100&h=100&fit=crop&crop=center" alt="SQL">
+            </div>
+            <h3>SQL</h3>
+            <p>Database management and queries</p>
+          </div>
+          <div class="card-back">
+            <div class="read-more-icon">📖</div>
+            <h3>Read More</h3>
+            <p>Explore SQL</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subject-card" onclick="openSubjectDetails('java')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon">
+              <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=100&h=100&fit=crop&crop=center" alt="Java">
+            </div>
+            <h3>Java</h3>
+            <p>Object-oriented programming language</p>
+          </div>
+          <div class="card-back">
+            <div class="read-more-icon">📖</div>
+            <h3>Read More</h3>
+            <p>Explore Java</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subject-card" onclick="openSubjectDetails('digital-forensics')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon">
+              <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=100&h=100&fit=crop&crop=center" alt="Digital Forensics">
+            </div>
+            <h3>Digital Forensics</h3>
+            <p>Digital evidence analysis and recovery</p>
+          </div>
+          <div class="card-back">
+            <div class="read-more-icon">📖</div>
+            <h3>Read More</h3>
+            <p>Explore Digital Forensics</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subject-card" onclick="openSubjectDetails('data-visualization')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon">
+              <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=100&h=100&fit=crop&crop=center" alt="Data Visualization">
+            </div>
+            <h3>Data Visualization</h3>
+            <p>Presenting data through visual storytelling</p>
+          </div>
+          <div class="card-back">
+            <div class="read-more-icon">📖</div>
+            <h3>Read More</h3>
+            <p>Explore Data Visualization</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subject-card" onclick="openSubjectDetails('soft-computing')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon">
+              <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=100&h=100&fit=crop&crop=center" alt="Soft Computing">
+            </div>
+            <h3>Soft Computing</h3>
+            <p>Approximate reasoning and intelligent systems</p>
+          </div>
+          <div class="card-back">
+            <div class="read-more-icon">📖</div>
+            <h3>Read More</h3>
+            <p>Explore Soft Computing</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subject-card" onclick="openSubjectDetails('optimization-algorithm')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon">
+              <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=100&h=100&fit=crop&crop=center" alt="Optimization Algorithm">
+            </div>
+            <h3>Optimization Algorithm</h3>
+            <p>Efficient problem-solving techniques</p>
+          </div>
+          <div class="card-back">
+            <div class="read-more-icon">📖</div>
+            <h3>Read More</h3>
+            <p>Explore Optimization Algorithm</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
 
   <!-- Purpose -->
 <section class="purpose" id="purpose">
