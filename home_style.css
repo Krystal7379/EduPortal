@@ -36,6 +36,8 @@ body {
       background: #94B4C1;
       min-height: 100vh;
       overflow-x: hidden;
+      perspective: 1000px;
+      cursor: pointer;
       
     }
 
@@ -92,7 +94,8 @@ body {
 
     .subject-card:hover .card-inner {
       
-      transform: translateY(-5px);
+      transform: rotateY(180deg);
+
       /* background: linear-gradient(160deg, #6F8066, #4A4A3F);   */
     }
 
@@ -153,6 +156,7 @@ body {
     .read-more-icon {
       font-size: 2rem;
     }
+    
 
     .subject-card:hover .card-icon {
       transform: scale(1.1) rotate(5deg);
@@ -191,9 +195,7 @@ body {
       font-weight: 500;
     }
 
-    .subject-card:active .card-inner {
-      transform: rotateY(180deg) scale(0.95);
-    }
+    
 
 
     /*Show more button*/
