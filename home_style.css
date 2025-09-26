@@ -1,8 +1,11 @@
-body {
-      margin: 0;
+body { 
+        margin: 0;
       font-family: 'Merriweather Sans', regular;
-      background-color: #94B4C1;
-    }
+  background: linear-gradient(135deg, #94B4C1, #213448);
+}
+/* * { background: transparent !important; } */
+
+    
 
     /* Navbar */
     header {
@@ -32,6 +35,26 @@ body {
       color: #ffdd55;
       transform: translateY(-2px);
     }
+
+    /* Login */
+    .login {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      
+      background: linear-gradient(135deg, #ffdd55, #ef9e2e);
+      cursor: pointer;
+      transition: 0.7s ease;
+      border-radius: 10px;
+
+    }
+
+    .login:hover{
+      background: linear-gradient(135deg, #ef9e2e, #ffdd55);
+      color: #213448;
+      transform: translateY(-3px);
+    }
+
 
     /* Search Container */
     .search-container {
