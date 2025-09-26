@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Education Portal</title>
   <link rel="stylesheet" href="home_style.css">
-  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+  <script src="home.js"></script>
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Navigation --> 
   <header>
     <div class="logo">EduPortal</div>
     <nav>
@@ -22,421 +24,377 @@
   </header>
 
   <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to EduPortal</h1>
+  </section>
 
-
-<section class="hero">
-  
-</section>
-
-
-  <!-- Subject Cards -->
-  <section class="subjects">
-    <h2>Explore Our Subjects</h2>
-    <div class="subjects-grid">
-      <div class="subject-card" onclick="openSubjectDetails('computer-science')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-icon">
-              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=100&h=100&fit=crop&crop=center" alt="Computer Science">
-            </div>
-            <h3>Computer Science</h3>
-            <p>Core programming and computational thinking</p>
-          </div>
-          <div class="card-back">
-            <div class="read-more-icon">📖</div>
-            <h3>Read More</h3>
-            <p>Explore Computer Science</p>
-          </div>
-        </div>
-      </div>
-      <div class="subject-card" onclick="openSubjectDetails('data-science')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-icon">
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=100&h=100&fit=crop&crop=center" alt="Data Science">
-            </div>
-            <h3>Data Science</h3>
-            <p>Extract insights from complex data</p>
-          </div>
-          <div class="card-back">
-            <div class="read-more-icon">📖</div>
-            <h3>Read More</h3>
-            <p>Explore Data Science</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="subject-card" onclick="openSubjectDetails('ai-ml')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-icon">
-              <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=100&h=100&fit=crop&crop=center" alt="AI ML">
-            </div>
-            <h3>AI ML</h3>
-            <p>Artificial Intelligence and Machine Learning</p>
-          </div>
-          <div class="card-back">
-            <div class="read-more-icon">📖</div>
-            <h3>Read More</h3>
-            <p>Explore AI ML</p>
-          </div>
-        </div>
-      </div>
-      <div class="subject-card" onclick="openSubjectDetails('statistics')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-icon">
-              <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=100&h=100&fit=crop&crop=center" alt="Statistics">
-            </div>
-            <h3>Statistics</h3>
-            <p>Mathematical foundations of data analysis</p>
-          </div>
-          <div class="card-back">
-            <div class="read-more-icon">📖</div>
-            <h3>Read More</h3>
-            <p>Explore Statistics</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="subject-card" onclick="openSubjectDetails('multimedia')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-icon">
-              <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=100&h=100&fit=crop&crop=center" alt="Multimedia">
-            </div>
-            <h3>Multimedia</h3>
-            <p>Digital content creation and design</p>
-          </div>
-          <div class="card-back">
-            <div class="read-more-icon">📖</div>
-            <h3>Read More</h3>
-            <p>Explore Multimedia</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="subject-card" onclick="openSubjectDetails('evs')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-icon">
-              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=100&h=100&fit=crop&crop=center" alt="EVS">
-            </div>
-            <h3>EVS</h3>
-            <p>Environmental Science and Sustainability</p>
-          </div>
-          <div class="card-back">
-            <div class="read-more-icon">📖</div>
-            <h3>Read More</h3>
-            <p>Explore EVS</p>
-          </div>
-        </div>
-      </div>
-      <div class="subject-card" onclick="openSubjectDetails('iot')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-icon">
-              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=100&h=100&fit=crop&crop=center" alt="IOT">
-            </div>
-            <h3>IOT</h3>
-            <p>Internet of Things and connected devices</p>
-          </div>
-          <div class="card-back">
-            <div class="read-more-icon">📖</div>
-            <h3>Read More</h3>
-            <p>Explore IOT</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="subject-card" onclick="openSubjectDetails('image-recognition')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-icon">
-              <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=100&h=100&fit=crop&crop=center" alt="Image Recognition">
-            </div>
-            <h3>Image Recognition</h3>
-            <p>Computer vision and pattern recognition</p>
-          </div>
-          <div class="card-back">
-            <div class="read-more-icon">📖</div>
-            <h3>Read More</h3>
-            <p>Explore Image Recognition</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="subject-card" onclick="openSubjectDetails('data-security')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-icon">
-              <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=100&h=100&fit=crop&crop=center" alt="Data Security">
-            </div>
-            <h3>Data Security</h3>
-            <p>Protecting information and systems</p>
-          </div>
-          <div class="card-back">
-            <div class="read-more-icon">📖</div>
-            <h3>Read More</h3>
-            <p>Explore Data Security</p>
-          </div>
-        </div>
-      </div>
-      <div class="subject-card" onclick="openSubjectDetails('oceanography')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-icon">
-              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=100&h=100&fit=crop&crop=center" alt="Oceanography">
-            </div>
-            <h3>Oceanography</h3>
-            <p>Study of marine environments</p>
-          </div>
-          <div class="card-back">
-            <div class="read-more-icon">📖</div>
-            <h3>Read More</h3>
-            <p>Explore Oceanography</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="subject-card" onclick="openSubjectDetails('cyber-security')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-icon">
-              <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=100&h=100&fit=crop&crop=center" alt="Cyber Security">
-            </div>
-            <h3>Cyber Security</h3>
-            <p>Defending against digital threats</p>
-          </div>
-          <div class="card-back">
-            <div class="read-more-icon">📖</div>
-            <h3>Read More</h3>
-            <p>Explore Cyber Security</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="subject-card" onclick="openSubjectDetails('ethical-hacking')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-icon">
-              <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=100&h=100&fit=crop&crop=center" alt="Ethical Hacking">
-            </div>
-            <h3>Ethical Hacking</h3>
-            <p>Security testing and vulnerability assessment</p>
-          </div>
-          <div class="card-back">
-            <div class="read-more-icon">📖</div>
-            <h3>Read More</h3>
-            <p>Explore Ethical Hacking</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="subject-card" onclick="openSubjectDetails('sql')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-icon">
-              <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=100&h=100&fit=crop&crop=center" alt="SQL">
-            </div>
-            <h3>SQL</h3>
-            <p>Database management and queries</p>
-          </div>
-          <div class="card-back">
-            <div class="read-more-icon">📖</div>
-            <h3>Read More</h3>
-            <p>Explore SQL</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="subject-card" onclick="openSubjectDetails('java')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-icon">
-              <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=100&h=100&fit=crop&crop=center" alt="Java">
-            </div>
-            <h3>Java</h3>
-            <p>Object-oriented programming language</p>
-          </div>
-          <div class="card-back">
-            <div class="read-more-icon">📖</div>
-            <h3>Read More</h3>
-            <p>Explore Java</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="subject-card" onclick="openSubjectDetails('digital-forensics')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-icon">
-              <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=100&h=100&fit=crop&crop=center" alt="Digital Forensics">
-            </div>
-            <h3>Digital Forensics</h3>
-            <p>Digital evidence analysis and recovery</p>
-          </div>
-          <div class="card-back">
-            <div class="read-more-icon">📖</div>
-            <h3>Read More</h3>
-            <p>Explore Digital Forensics</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="subject-card" onclick="openSubjectDetails('data-visualization')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-icon">
-              <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=100&h=100&fit=crop&crop=center" alt="Data Visualization">
-            </div>
-            <h3>Data Visualization</h3>
-            <p>Presenting data through visual storytelling</p>
-          </div>
-          <div class="card-back">
-            <div class="read-more-icon">📖</div>
-            <h3>Read More</h3>
-            <p>Explore Data Visualization</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="subject-card" onclick="openSubjectDetails('soft-computing')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-icon">
-              <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=100&h=100&fit=crop&crop=center" alt="Soft Computing">
-            </div>
-            <h3>Soft Computing</h3>
-            <p>Approximate reasoning and intelligent systems</p>
-          </div>
-          <div class="card-back">
-            <div class="read-more-icon">📖</div>
-            <h3>Read More</h3>
-            <p>Explore Soft Computing</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="subject-card" onclick="openSubjectDetails('optimization-algorithm')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-icon">
-              <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=100&h=100&fit=crop&crop=center" alt="Optimization Algorithm">
-            </div>
-            <h3>Optimization Algorithm</h3>
-            <p>Efficient problem-solving techniques</p>
-          </div>
-          <div class="card-back">
-            <div class="read-more-icon">📖</div>
-            <h3>Read More</h3>
-            <p>Explore Optimization Algorithm</p>
-          </div>
-        </div>
-      </div>
+  <!-- Main Content with Three Columns -->
+  <main class="main-content">
+    <!-- Navigation Tabs -->
+    <div class="tab-navigation">
+      <button class="tab-btn active" onclick="showSection('teachers')">TEACHERS</button>
+      <button class="tab-btn" onclick="showSection('subjects')">SUBJECTS</button>
+      <button class="tab-btn" onclick="showSection('books')">BOOKS</button>
     </div>
-  </section>
 
-<button id="show-more-btn">Show More ▼</button>
+    <!-- Teachers Section -->
+    <section id="teachers-section" class="content-section active">
+      <h2 class="text-4xl font-bold text-center text-white mb-12 drop-shadow-lg">Our Teachers</h2>
+      <div class="teachers-grid">
+        <div class="teacher-card">
+          <div class="teacher-avatar">
+            <img src="Images/teacher1.jpg" alt="Teacher 1" onerror="this.src='Images/default-teacher.jpg'">
+          </div>
+          <h3>Dr. Sarah Johnson</h3>
+          <p>Mathematics Professor</p>
+        </div>
+        
+        <div class="teacher-card">
+          <div class="teacher-avatar">
+            <img src="Images/teacher2.jpg" alt="Teacher 2" onerror="this.src='Images/default-teacher.jpg'">
+          </div>
+          <h3>Prof. Michael Chen</h3>
+          <p>Computer Science</p>
+        </div>
+        
+        <div class="teacher-card">
+          <div class="teacher-avatar">
+            <img src="Images/teacher3.jpg" alt="Teacher 3" onerror="this.src='Images/default-teacher.jpg'">
+          </div>
+          <h3>Dr. Emily Rodriguez</h3>
+          <p>Physics Department</p>
+        </div>
+        
+        <div class="teacher-card">
+          <div class="teacher-avatar">
+            <img src="Images/teacher4.jpg" alt="Teacher 4" onerror="this.src='Images/default-teacher.jpg'">
+          </div>
+          <h3>Prof. David Wilson</h3>
+          <p>Chemistry Expert</p>
+        </div>
+        
+        <div class="teacher-card">
+          <div class="teacher-avatar">
+            <img src="Images/teacher5.jpg" alt="Teacher 5" onerror="this.src='Images/default-teacher.jpg'">
+          </div>
+          <h3>Dr. Lisa Anderson</h3>
+          <p>English Literature</p>
+        </div>
+        
+        <div class="teacher-card">
+          <div class="teacher-avatar">
+            <img src="Images/teacher6.jpg" alt="Teacher 6" onerror="this.src='Images/default-teacher.jpg'">
+          </div>
+          <h3>Prof. James Brown</h3>
+          <p>History Department</p>
+        </div>
+      </div>
+    </section>
 
-<script src="home.js"></script>  
+    <!-- Subjects Section -->
+    <section id="subjects-section" class="content-section">
+      <h2 class="text-4xl font-bold text-center text-white mb-12 drop-shadow-lg">Explore Our Subjects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
+        <!-- Computer Science -->
+        <div class="subject-card glassmorphism-card computer-science-bg" data-subject="computer-science">
+          <div class="card-content">
+            <div class="icon-container">
+              <div class="icon">💻</div>
+            </div>
+            <h3 class="subject-title">Computer Science</h3>
+            <p class="subject-description">Programming, algorithms, and software development</p>
+            <div class="glow-border"></div>
+          </div>
+        </div>
 
-  <!-- Purpose -->
-<!-- <section class="purpose" id="purpose">
-  <div class="purpose-card">
-    <h2>What’s the <em>PURPOSE</em> of this Webpage?</h2>
-    <p>
-      As an <span class="highlight">educator</span>, my purpose is to not only teach concepts but also to 
-      <span class="highlight">ignite curiosity</span>, encourage critical thinking, and 
-      <span class="highlight">inspire innovation</span> among learners.  
-      Through this portal, I aim to share resources, publish blogs, highlight research contributions, 
-      and provide guidance to students beyond the classroom.  
-      My vision is to create an academic space that fosters 
-      <span class="highlight">collaboration</span>, <span class="highlight">lifelong learning</span>, 
-      and the pursuit of <span class="highlight">excellence</span> in technology and education.
-    </p>
-  </div>
-</section> -->
+        <!-- Data Science -->
+        <div class="subject-card glassmorphism-card data-science-bg" data-subject="data-science">
+          <div class="card-content">
+            <div class="icon-container">
+              <div class="icon">📊</div>
+            </div>
+            <h3 class="subject-title">Data Science</h3>
+            <p class="subject-description">Extract insights from complex data sets</p>
+            <div class="glow-border"></div>
+          </div>
+        </div>
 
+        <!-- AI ML -->
+        <div class="subject-card glassmorphism-card ai-ml-bg" data-subject="ai-ml">
+          <div class="card-content">
+            <div class="icon-container">
+              <div class="icon">🤖</div>
+            </div>
+            <h3 class="subject-title">AI ML</h3>
+            <p class="subject-description">Artificial Intelligence and Machine Learning</p>
+            <div class="glow-border"></div>
+          </div>
+        </div>
 
-  </section>
-<!-- books -->
-  <section class="books">
-    <h3>Top 6 Book Recommendations by ANM Sir :~</h3>
-    <div class="books-grid">
-      <div class="book-card" onclick="window.open('pdfs/book1.pdf', '_blank')">
-        <div class="book-cover">
-          <img src="Images/book1.jpg" alt="Book 1 Cover" onerror="this.style.display='none'">
+        <!-- Statistics -->
+        <div class="subject-card glassmorphism-card statistics-bg" data-subject="statistics">
+          <div class="card-content">
+            <div class="icon-container">
+              <div class="icon">📈</div>
+            </div>
+            <h3 class="subject-title">Statistics</h3>
+            <p class="subject-description">Data analysis and statistical modeling</p>
+            <div class="glow-border"></div>
+          </div>
         </div>
-        <div class="book-info">
-          <h4>The C Programming Language </h4>
-          <p>by Brian Kernighan and Dennis Ritchie</p>
-          <span class="book-genre">Computer Science</span>
+
+        <!-- Multimedia -->
+        <div class="subject-card glassmorphism-card multimedia-bg" data-subject="multimedia">
+          <div class="card-content">
+            <div class="icon-container">
+              <div class="icon">🎨</div>
+            </div>
+            <h3 class="subject-title">Multimedia</h3>
+            <p class="subject-description">Digital media creation and design</p>
+            <div class="glow-border"></div>
+          </div>
+        </div>
+
+        <!-- EVS -->
+        <div class="subject-card glassmorphism-card evs-bg" data-subject="evs">
+          <div class="card-content">
+            <div class="icon-container">
+              <div class="icon">🌱</div>
+            </div>
+            <h3 class="subject-title">EVS</h3>
+            <p class="subject-description">Environmental Studies and Sustainability</p>
+            <div class="glow-border"></div>
+          </div>
+        </div>
+
+        <!-- IOT (Hidden initially) -->
+        <div class="subject-card glassmorphism-card hidden-subject iot-bg" data-subject="iot">
+          <div class="card-content">
+            <div class="icon-container">
+              <div class="icon">🌐</div>
+            </div>
+            <h3 class="subject-title">IOT</h3>
+            <p class="subject-description">Internet of Things and connected devices</p>
+            <div class="glow-border"></div>
+          </div>
+        </div>
+
+        <!-- Image Recognition (Hidden initially) -->
+        <div class="subject-card glassmorphism-card hidden-subject image-recognition-bg" data-subject="image-recognition">
+          <div class="card-content">
+            <div class="icon-container">
+              <div class="icon">👁️</div>
+            </div>
+            <h3 class="subject-title">Image Recognition</h3>
+            <p class="subject-description">Computer vision and pattern recognition</p>
+            <div class="glow-border"></div>
+          </div>
+        </div>
+
+        <!-- Data Security (Hidden initially) -->
+        <div class="subject-card glassmorphism-card hidden-subject data-security-bg" data-subject="data-security">
+          <div class="card-content">
+            <div class="icon-container">
+              <div class="icon">🔒</div>
+            </div>
+            <h3 class="subject-title">Data Security</h3>
+            <p class="subject-description">Protecting information and systems</p>
+            <div class="glow-border"></div>
+          </div>
+        </div>
+
+        <!-- Oceanography (Hidden initially) -->
+        <div class="subject-card glassmorphism-card hidden-subject oceanography-bg" data-subject="oceanography">
+          <div class="card-content">
+            <div class="icon-container">
+              <div class="icon">🌊</div>
+            </div>
+            <h3 class="subject-title">Oceanography</h3>
+            <p class="subject-description">Study of oceans and marine life</p>
+            <div class="glow-border"></div>
+          </div>
+        </div>
+
+        <!-- Cyber Security (Hidden initially) -->
+        <div class="subject-card glassmorphism-card hidden-subject cyber-security-bg" data-subject="cyber-security">
+          <div class="card-content">
+            <div class="icon-container">
+              <div class="icon">🛡️</div>
+            </div>
+            <h3 class="subject-title">Cyber Security</h3>
+            <p class="subject-description">Protecting digital systems and data</p>
+            <div class="glow-border"></div>
+          </div>
+        </div>
+
+        <!-- Ethical Hacking (Hidden initially) -->
+        <div class="subject-card glassmorphism-card hidden-subject ethical-hacking-bg" data-subject="ethical-hacking">
+          <div class="card-content">
+            <div class="icon-container">
+              <div class="icon">🔍</div>
+            </div>
+            <h3 class="subject-title">Ethical Hacking</h3>
+            <p class="subject-description">Authorized penetration testing and security</p>
+            <div class="glow-border"></div>
+          </div>
+        </div>
+
+        <!-- SQL (Hidden initially) -->
+        <div class="subject-card glassmorphism-card hidden-subject sql-bg" data-subject="sql">
+          <div class="card-content">
+            <div class="icon-container">
+              <div class="icon">🗄️</div>
+            </div>
+            <h3 class="subject-title">SQL</h3>
+            <p class="subject-description">Database management and queries</p>
+            <div class="glow-border"></div>
+          </div>
+        </div>
+
+        <!-- Java (Hidden initially) -->
+        <div class="subject-card glassmorphism-card hidden-subject java-bg" data-subject="java">
+          <div class="card-content">
+            <div class="icon-container">
+              <div class="icon">☕</div>
+            </div>
+            <h3 class="subject-title">Java</h3>
+            <p class="subject-description">Object-oriented programming language</p>
+            <div class="glow-border"></div>
+          </div>
+        </div>
+
+        <!-- Digital Forensics (Hidden initially) -->
+        <div class="subject-card glassmorphism-card hidden-subject digital-forensics-bg" data-subject="digital-forensics">
+          <div class="card-content">
+            <div class="icon-container">
+              <div class="icon">🔬</div>
+            </div>
+            <h3 class="subject-title">Digital Forensics</h3>
+            <p class="subject-description">Digital evidence analysis and recovery</p>
+            <div class="glow-border"></div>
+          </div>
+        </div>
+
+        <!-- Data Visualization (Hidden initially) -->
+        <div class="subject-card glassmorphism-card hidden-subject data-visualization-bg" data-subject="data-visualization">
+          <div class="card-content">
+            <div class="icon-container">
+              <div class="icon">📊</div>
+            </div>
+            <h3 class="subject-title">Data Visualization</h3>
+            <p class="subject-description">Creating visual representations of data</p>
+            <div class="glow-border"></div>
+          </div>
+        </div>
+
+        <!-- Soft Computing (Hidden initially) -->
+        <div class="subject-card glassmorphism-card hidden-subject soft-computing-bg" data-subject="soft-computing">
+          <div class="card-content">
+            <div class="icon-container">
+              <div class="icon">🧠</div>
+            </div>
+            <h3 class="subject-title">Soft Computing</h3>
+            <p class="subject-description">Fuzzy logic and neural networks</p>
+            <div class="glow-border"></div>
+          </div>
+        </div>
+
+        <!-- Optimization Algorithm (Hidden initially) -->
+        <div class="subject-card glassmorphism-card hidden-subject optimization-algorithm-bg" data-subject="optimization-algorithm">
+          <div class="card-content">
+            <div class="icon-container">
+              <div class="icon">⚡</div>
+            </div>
+            <h3 class="subject-title">Optimization Algorithm</h3>
+            <p class="subject-description">Efficient problem-solving techniques</p>
+            <div class="glow-border"></div>
+          </div>
         </div>
       </div>
-      
-      <div class="book-card" onclick="window.open('pdfs/book2.pdf', '_blank')">
-        <div class="book-cover">
-          <img src="Images/book2.jpg" alt="Book 2 Cover" onerror="this.style.display='none'">
+      <div class="text-center mt-12">
+        <button id="show-more-btn" class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-white/20 backdrop-blur-sm">
+          Show More ▼
+        </button>
+      </div>
+    </section>
+
+    <!-- Books Section -->
+    <section id="books-section" class="content-section">
+      <h2 class="text-4xl font-bold text-center text-white mb-12 drop-shadow-lg">Book Recommendations</h2>
+        <div class="books-grid">
+        <div class="book-card" onclick="window.open('pdfs/book1.pdf', '_blank')">
+          <div class="book-cover">
+            <img src="Images/book1.jpg" alt="Book 1 Cover" onerror="this.style.display='none'">
+          </div>
+          <div class="book-info">
+            <h4>The C Programming Language</h4>
+            <p>by Brian Kernighan and Dennis Ritchie</p>
+            <span class="book-genre">Computer Science</span>
+          </div>
         </div>
-        <div class="book-info">
-          <h4>Let Us C</h4>
-          <p>by Yashavant Kanetkar</p>
-          <span class="book-genre">Computer Science</span>
+        
+        <div class="book-card" onclick="window.open('pdfs/book2.pdf', '_blank')">
+          <div class="book-cover">
+            <img src="Images/book2.jpg" alt="Book 2 Cover" onerror="this.style.display='none'">
+          </div>
+          <div class="book-info">
+            <h4>To Kill a Mockingbird</h4>
+            <p>by Harper Lee</p>
+            <span class="book-genre">Fiction</span>
+          </div>
+        </div>
+        
+        <div class="book-card" onclick="window.open('pdfs/book3.pdf', '_blank')">
+          <div class="book-cover">
+            <img src="Images/book3.jpg" alt="Book 3 Cover" onerror="this.style.display='none'">
+          </div>
+          <div class="book-info">
+            <h4>1984</h4>
+            <p>by George Orwell</p>
+            <span class="book-genre">Dystopian Fiction</span>
+          </div>
+        </div>
+        
+        <div class="book-card" onclick="window.open('pdfs/book4.pdf', '_blank')">
+          <div class="book-cover">
+            <img src="Images/book4.jpg" alt="Book 4 Cover" onerror="this.style.display='none'">
+          </div>
+          <div class="book-info">
+            <h4>Pride and Prejudice</h4>
+            <p>by Jane Austen</p>
+            <span class="book-genre">Romance</span>
+          </div>
+        </div>
+        
+        <div class="book-card" onclick="window.open('pdfs/book5.pdf', '_blank')">
+          <div class="book-cover">
+            <img src="Images/book5.jpg" alt="Book 5 Cover" onerror="this.style.display='none'">
+          </div>
+          <div class="book-info">
+            <h4>The Catcher in the Rye</h4>
+            <p>by J.D. Salinger</p>
+            <span class="book-genre">Coming-of-age</span>
+          </div>
+        </div>
+        
+        <div class="book-card" onclick="window.open('pdfs/book6.pdf', '_blank')">
+          <div class="book-cover">
+            <img src="Images/book6.jpg" alt="Book 6 Cover" onerror="this.style.display='none'">
+          </div>
+          <div class="book-info">
+            <h4>Lord of the Flies</h4>
+            <p>by William Golding</p>
+            <span class="book-genre">Adventure Fiction</span>
+          </div>
         </div>
       </div>
-      
-      <div class="book-card" onclick="window.open('pdfs/book3.pdf', '_blank')">
-        <div class="book-cover">
-          <img src="Images/book3.png" alt="Book 3 Cover" onerror="this.style.display='none'">
-        </div>
-        <div class="book-info">
-          <h4>Prompt Engineering</h4>
-          <p>by Lee Boonstra</p>
-          <span class="book-genre">Computer Science</span>
-        </div>
-      </div>
-      
-      <div class="book-card" onclick="window.open('pdfs/book4.pdf', '_blank')">
-        <div class="book-cover">
-          <img src="Images/book4.jpg" alt="Book 4 Cover" onerror="this.style.display='none'">
-        </div>
-        <div class="book-info">
-          <h4>The Art of Doing SCIENCE and Engineering</h4>
-          <p>by Richard Hamming</p>
-          <span class="book-genre">Computer Science</span>
-        </div>
-      </div>
-      
-      <div class="book-card" onclick="window.open('pdfs/book5.pdf', '_blank')">
-        <div class="book-cover">
-          <img src="Images/book5.jpg" alt="Book 5 Cover" onerror="this.style.display='none'">
-        </div>
-        <div class="book-info">
-          <h4>HTML NOTES</h4>
-          <p>by Amit Nishad</p>
-          <span class="book-genre">Web Dev</span>
-        </div>
-      </div>
-      
-      <div class="book-card" onclick="window.open('pdfs/book6.pdf', '_blank')">
-        <div class="book-cover">
-          <img src="Images/book6.jpg" alt="Book 6 Cover" onerror="this.style.display='none'">
-        </div>
-        <div class="book-info">
-          <h4>The Little Book of Deep Learning</h4>
-          <p>by François Fleuret</p>
-          <span class="book-genre">Deep Learning</span>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer>
     <p>Contact Us: idontknow@gmail.com | +91 9999xxxxxx</p>
   </footer>
 
-  
 </body>
 </html>
